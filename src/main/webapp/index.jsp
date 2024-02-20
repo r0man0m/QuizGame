@@ -12,7 +12,5 @@
         <button name="regUser" type="submit" onclick="window.location='/regUser'">Registration</button>
         <button name="admin" type="submit" onclick="window.location='/admin'">Admin page</button>
     </div>
-
-
 </body>
 </html>

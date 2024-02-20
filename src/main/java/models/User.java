@@ -14,6 +14,11 @@ public class User {
         this.id = id;
     }
 
+    public User(String name, String nickName) {
+        this.name = name;
+        this.nickName = nickName;
+    }
+
     public String getName() {
         return name;
     }
@@ -51,12 +56,12 @@ public class User {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return Objects.equals(name, user.name) && Objects.equals(nickName, user.nickName) && Objects.equals(id, user.id) && Objects.equals(gameCount, user.gameCount);
+        return Objects.equals(name, user.name) && Objects.equals(nickName, user.nickName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, nickName, id, gameCount);
+        return Objects.hash(name, nickName);
     }
 
     @Override

@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.io.PrintWriter" %><%--
   Created by IntelliJ IDEA.
   User: Roman
   Date: 17.02.2024
@@ -25,6 +25,11 @@
             <br>
             <button type="submit">Submit</button>
         </form>
+    </div>
+    <div>
+        <%if(session.getAttribute("added")!=null){%>
+        <h2><%=session.getAttribute("added")%></h2>
+            <%}%>
     </div>
     <div>
         <a href="/index.jsp">Back to main</a>

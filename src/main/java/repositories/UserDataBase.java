@@ -28,10 +28,8 @@ public class UserDataBase {
     }
     public Integer getIdUser(String nick){
         AtomicReference<Integer> id = new AtomicReference<>();
-        userMap.entrySet().stream().forEach(e->{
-            if (e.getValue().equals(nick)){
-                id.set(e.getKey());
-            }
+        userMap.entrySet().stream().filter(c->c.getValue().getNickName().equals(nick)).forEach(u->{
+            id.set(u.getKey());
         });
         return id.get();
     }

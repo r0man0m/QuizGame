@@ -16,10 +16,15 @@
     </header>
     <div>
         <form action="/auth" method="post">
-            <input type="text" name="nickName" id="nickName">
+            <label for="name">User Name</label>
+            <input type="text" name="name" id="name"><br>
             <label for="NickName">User nickname</label>
-           <button type="submit">Submit</button>
+            <input type="text" name="nickName" id="nickName">
+           <button type="submit">Submit</button><br>
         </form>
+        <div>
+            <a href="index.jsp">Back to main</a>
+        </div>
     </div>
 
 </body>

@@ -1,32 +1,26 @@
 package servlets;
-
-import exceptions.notFindUserException;
+import exceptions.NotUserExistsException;
 import models.User;
 import service.GameService;
-
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
 @WebServlet("/auth")
 public class authorizationServlet extends HttpServlet {
     GameService service = GameService.getInstance();
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/first.jsp");
-        List<User>users = service.getAllUsers();
+        String name = req.getParameter("name");
         String nick = req.getParameter("nickName");
-        for (User user: users){
-            if(!user.getNickName().equals(nick)){
-                throw new notFindUserException("User is not exists!");
-            }else {
-                dispatcher.forward(req,resp);
-            }
+        User user = new User(name, nick);
+        if(!service.checkUser(user) || service.getAllUsers().size() == 0){
+            throw new NotUserExistsException("User is not exists");
+        }else {
+            resp.sendRedirect("/first.jsp");
         }
     }
 }

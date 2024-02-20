@@ -8,13 +8,16 @@ import java.util.*;
 
 public class GameService {
     private static GameService instance = new GameService();
-    private UserDataBase repository = UserDataBase.getInstance();
+    private UserDataBase userDataBase = UserDataBase.getInstance();
     private UserCounter userCounter = UserCounter.getInstance();
     private GameCounter gameCounter = GameCounter.getInstance();
+    private CheckUsersService checkUsersService;
+
     private Map<Integer, Games>db = new HashMap<>();
 
     private GameService() {
     }
+
     public static synchronized GameService getInstance(){
         if (instance == null){
             return new GameService();
@@ -31,10 +34,10 @@ public class GameService {
         return new ArrayList<>(db.values());
     }
     public void setUser(User user, Integer id){
-        repository.setUser(user, id);
+        userDataBase.setUser(user, id);
     }
     public User getUser(Integer id){
-        return repository.getUser(id);
+        return userDataBase.getUser(id);
     }
     public void setUserCounter(Integer counter){
         userCounter.setCountUser(counter);
@@ -49,9 +52,13 @@ public class GameService {
         return gameCounter.getCount();
     }
     public Integer getUserId(String nickName){
-        return repository.getIdUser(nickName);
+        return userDataBase.getIdUser(nickName);
     }
     public List<User> getAllUsers(){
-        return repository.getAll();
+        return userDataBase.getAll();
+    }
+    public boolean checkUser(User user){
+        checkUsersService = new CheckUsersService(getAllUsers());
+        return checkUsersService.check(user);
     }
 }

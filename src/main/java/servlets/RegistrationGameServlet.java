@@ -22,9 +22,9 @@ public class RegistrationGameServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Integer gameId = service.getGameCounter();
+        service.setGameCounter(service.getGameCounter() + 1);
         String userNickName = req.getParameter("nickName");
         Integer userId = service.getUserId(userNickName);
-        service.setGameCounter(service.getGameCounter() + 1);
         TypeConstructor typeConstructor = new TypeConstructor();
         GameTypes type = typeConstructor.getType(req.getParameter("game"));
         GameConstructor constructor = new GameConstructor();
