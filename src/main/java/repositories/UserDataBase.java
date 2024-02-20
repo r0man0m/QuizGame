@@ -1,0 +1,39 @@
+package repositories;
+
+import models.User;
+
+import java.util.*;
+import java.util.concurrent.atomic.AtomicReference;
+
+public class UserDataBase {
+    private static UserDataBase instance = new UserDataBase();
+    private Map<Integer, User> userMap = new HashMap<>();
+
+    private UserDataBase() {
+    }
+    public static synchronized UserDataBase getInstance(){
+        if(instance == null){
+            return new UserDataBase();
+        }
+        return instance;
+    }
+    public void setUser(User user, Integer id){
+        userMap.put(id, user);
+    }
+    public User getUser(Integer id){
+        return userMap.get(id);
+    }
+    public List<User>getAll(){
+        return new ArrayList<>(userMap.values());
+    }
+    public Integer getIdUser(String nick){
+        AtomicReference<Integer> id = new AtomicReference<>();
+        userMap.entrySet().stream().forEach(e->{
+            if (e.getValue().equals(nick)){
+                id.set(e.getKey());
+            }
+        });
+        return id.get();
+    }
+
+}
