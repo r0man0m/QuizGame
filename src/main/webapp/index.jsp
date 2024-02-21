@@ -10,7 +10,7 @@
     <div>
         <button name="auth" type="submit" onclick="window.location = '/authorizationPage.jsp'">Authorization</button>
         <button name="regUser" type="submit" onclick="window.location='/regUser'">Registration</button>
-        <button name="admin" type="submit" onclick="window.location='/admin'">Admin page</button>
+        <button name="admin" type="submit" onclick="window.location='/adminLoginPage.jsp'">Admin page</button>
     </div>
 </body>
 </html>

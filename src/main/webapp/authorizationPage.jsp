@@ -17,9 +17,9 @@
     <div>
         <form action="/auth" method="post">
             <label for="name">User Name</label>
-            <input type="text" name="name" id="name"><br>
+            <input type="text" name="name" id="name" required><br>
             <label for="NickName">User nickname</label>
-            <input type="text" name="nickName" id="nickName">
+            <input type="text" name="nickName" id="nickName" required>
            <button type="submit">Submit</button><br>
         </form>
         <div>

@@ -18,10 +18,10 @@
         <h2>Add new user</h2>
         <form action="/regUser" method="post">
             <label for="name">Name: </label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" required>
             <br>
             <label for="nick">Nickname</label>
-            <input type="text" name="nick" id="nick">
+            <input type="text" name="nick" id="nick" required>
             <br>
             <button type="submit">Submit</button>
         </form>
