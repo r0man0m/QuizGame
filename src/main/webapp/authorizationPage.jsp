@@ -15,7 +15,7 @@
         <h1>Authorization page</h1>
     </header>
     <div>
-        <form action="/auth" method="post">
+        <form action="auth" method="post">
             <label for="name">User Name</label>
             <input type="text" name="name" id="name" required><br>
             <label for="NickName">User nickname</label>

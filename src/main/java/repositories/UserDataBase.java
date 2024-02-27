@@ -33,5 +33,11 @@ public class UserDataBase {
         });
         return id.get();
     }
+    public void delUser(User user){
+        userMap.remove(user);
+    }
+    public void delAllUsers(){
+        userMap.clear();
+    }
 
 }

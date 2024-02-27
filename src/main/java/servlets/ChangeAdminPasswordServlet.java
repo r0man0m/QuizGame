@@ -14,7 +14,10 @@ import java.io.IOException;
 public class ChangeAdminPasswordServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.sendRedirect("changePasswordPage.jsp");
+        //resp.sendRedirect("changePasswordPage.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("changePasswordPage.jsp");
+        dispatcher.forward(req, resp);
+
     }
 
     @Override

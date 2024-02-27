@@ -34,6 +34,12 @@
 
     </div>
     <div>
+        <form action="del" method="post">
+            <button name="one" value="one" type="submit">Delete user</button>
+            <button name="all" value="all" type="submit">Delete all users</button>
+        </form>
+    </div>
+    <div>
         <a href="index.jsp">Back to main</a>
     </div>
 </body>

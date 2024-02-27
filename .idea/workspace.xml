@@ -9,20 +9,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4172d70-481f-4225-bcd0-a86819d1178c" name="Changes" comment="second commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/WrongPasswordException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/PasswordSaver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/AdminLoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/ChangeAdminPasswordServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/ConfirmationPage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adminLoginPage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/changePasswordPage.jsp" afterDir="false" />
+    <list default="true" id="a4172d70-481f-4225-bcd0-a86819d1178c" name="Changes" comment="added confirmation admin password">
+      <change afterPath="$PROJECT_DIR$/src/main/java/interfaces/Content.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/content/AnotherContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/content/MoreContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/content/UfoContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/games/UfoGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/games/abstracts/AbstractContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/GameIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/DeleteUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/GameServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/SetGameServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/game.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/loose.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/selectUserPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/win.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/AdminServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/AdminServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/Games.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/Games.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/AnotherGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/games/AnotherGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/games/abstracts/AbstractGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/MoreGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/games/MoreGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/UfoGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/UserDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/UserDataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/GameConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GameConstructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/ChangeAdminPasswordServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/ChangeAdminPasswordServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/RegistrationGameServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/RegistrationGameServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/RegistrationUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/RegistrationUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/authorizationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/AuthorizationServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/gameServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminPage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/authorizationPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/authorizationPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/registerUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registerUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/userList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/first.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/choiceGame.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,11 +52,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="Interface" />
+        <option value="Class" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -84,9 +104,15 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;service.view.auto.scroll.to.source&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.84" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.84" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
@@ -198,7 +224,12 @@
       <workItem from="1708373901819" duration="830000" />
       <workItem from="1708375810917" duration="8996000" />
       <workItem from="1708445067579" duration="28039000" />
-      <workItem from="1708510225097" duration="3951000" />
+      <workItem from="1708510225097" duration="21355000" />
+      <workItem from="1708690481640" duration="8343000" />
+      <workItem from="1708808511222" duration="9147000" />
+      <workItem from="1708860965187" duration="4931000" />
+      <workItem from="1708982222301" duration="2108000" />
+      <workItem from="1709046995378" duration="13055000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -216,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708467587642</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added confirmation admin password">
+      <option name="closed" value="true" />
+      <created>1708515800449</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708515800449</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +276,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first commit" />
     <MESSAGE value="second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+    <MESSAGE value="added confirmation admin password" />
+    <option name="LAST_COMMIT_MESSAGE" value="added confirmation admin password" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

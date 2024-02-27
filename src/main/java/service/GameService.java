@@ -12,6 +12,8 @@ public class GameService {
     private UserCounter userCounter = UserCounter.getInstance();
     private GameCounter gameCounter = GameCounter.getInstance();
     private CheckUsersService checkUsersService;
+    private GameConstructor constructor = new GameConstructor();
+    private GameIterator iterator = new GameIterator();
 
     private Map<Integer, Games>db = new HashMap<>();
 
@@ -60,5 +62,23 @@ public class GameService {
     public boolean checkUser(User user){
         checkUsersService = new CheckUsersService(getAllUsers());
         return checkUsersService.check(user);
+    }
+    public void delUser(User user){
+        userDataBase.delUser(user);
+    }
+    public void delAllUsers(){
+        userDataBase.delAllUsers();
+        gameCounter.setCount(0);
+    }
+    public Games createGame(GameTypes type, User user){
+        Games game = constructor.getGame(type);
+        game.setId(getGameCounter());
+        game.setType(type);
+        game.setUser(user);
+        return game;
+    }
+
+    public GameIterator getIterator() {
+        return iterator;
     }
 }

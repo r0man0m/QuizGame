@@ -1,9 +1,7 @@
 package servlets;
 
 import interfaces.Games;
-import models.Game;
 import models.GameTypes;
-import models.User;
 import service.GameConstructor;
 import service.GameService;
 import service.TypeConstructor;

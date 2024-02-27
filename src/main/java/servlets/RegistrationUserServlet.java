@@ -3,6 +3,8 @@ package servlets;
 import exceptions.NotUserExistsException;
 import models.User;
 import service.GameService;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,8 +21,8 @@ public class RegistrationUserServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession(true);
         session.setAttribute("added", null);
-        resp.sendRedirect("/registerUser.jsp");
-
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/registerUser.jsp");
+        dispatcher.forward(req, resp);
     }
 
     @Override
