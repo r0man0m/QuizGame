@@ -39,11 +39,11 @@
         </form>
         <form action="del" method="post">
             <label for="name">User Name</label>
-            <input type="text" name="name" id="name"><br>
+            <input type="text" name="name" id="name" required><br>
             <label for="nickName">User nickname</label>
-            <input type="text" name="nickName" id="nickName"><br>
+            <input type="text" name="nickName" id="nickName" required><br>
             <label for="id">User Id</label>
-            <input type="number" name="id" id="id"><br>
+            <input type="number" name="id" id="id" required><br>
             <button name="button" value="one" type="submit">Delete user</button><br>
         </form>
     </div>

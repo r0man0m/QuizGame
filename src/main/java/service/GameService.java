@@ -32,9 +32,6 @@ public class GameService {
     public Games getGame(Integer id){
         return db.get(id);
     }
-    public List<Games> getAllGames(){
-        return new ArrayList<>(db.values());
-    }
     public void setUser(User user, Integer id){
         userDataBase.setUser(user, id);
     }
@@ -66,9 +63,6 @@ public class GameService {
     public boolean checkUser(User user){
         checkUsersService = new CheckUsersService(getAllUsers());
         return checkUsersService.check(user);
-    }
-    public void delUser(User user){
-        userDataBase.delUser(user);
     }
     public void delAllUsers(){
         userDataBase.delAllUsers();

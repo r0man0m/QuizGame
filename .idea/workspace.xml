@@ -9,15 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4172d70-481f-4225-bcd0-a86819d1178c" name="Changes" comment="added UfoGame">
+    <list default="true" id="a4172d70-481f-4225-bcd0-a86819d1178c" name="Changes" comment="added delUser">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/UserDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/UserDataBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GameService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/DeleteUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/DeleteUserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/GameServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/GameServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/TypeConstructor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/RegistrationGameServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/adminPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/game.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/game.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/selectUserPage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/registerGame.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +203,7 @@
       <workItem from="1708860965187" duration="4931000" />
       <workItem from="1708982222301" duration="2108000" />
       <workItem from="1709046995378" duration="20074000" />
-      <workItem from="1709146384392" duration="7999000" />
+      <workItem from="1709146384392" duration="9156000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -239,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709062312881</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added delUser">
+      <option name="closed" value="true" />
+      <created>1709156255600</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709156255600</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,23 +268,10 @@
     <MESSAGE value="second commit" />
     <MESSAGE value="added confirmation admin password" />
     <MESSAGE value="added UfoGame" />
-    <option name="LAST_COMMIT_MESSAGE" value="added UfoGame" />
+    <MESSAGE value="added delUser" />
+    <option name="LAST_COMMIT_MESSAGE" value="added delUser" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/service/GameService.java</url>
-          <line>78</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/service/GameService.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="repositories.UserDataBase" memberName="userMap" />
