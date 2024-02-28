@@ -35,8 +35,16 @@
     </div>
     <div>
         <form action="del" method="post">
-            <button name="one" value="one" type="submit">Delete user</button>
-            <button name="all" value="all" type="submit">Delete all users</button>
+            <button name="button" value="all" type="submit">Delete all users</button>
+        </form>
+        <form action="del" method="post">
+            <label for="name">User Name</label>
+            <input type="text" name="name" id="name"><br>
+            <label for="nickName">User nickname</label>
+            <input type="text" name="nickName" id="nickName"><br>
+            <label for="id">User Id</label>
+            <input type="number" name="id" id="id"><br>
+            <button name="button" value="one" type="submit">Delete user</button><br>
         </form>
     </div>
     <div>

@@ -33,6 +33,11 @@ public class UserDataBase {
         });
         return id.get();
     }
+
+    public Map<Integer, User> getUserMap() {
+        return userMap;
+    }
+
     public void delUser(User user){
         userMap.remove(user);
     }

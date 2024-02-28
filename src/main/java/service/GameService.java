@@ -59,6 +59,10 @@ public class GameService {
     public List<User> getAllUsers(){
         return userDataBase.getAll();
     }
+    public UserDataBase getUserDataBase(){
+        return userDataBase;
+    }
+
     public boolean checkUser(User user){
         checkUsersService = new CheckUsersService(getAllUsers());
         return checkUsersService.check(user);
@@ -69,6 +73,16 @@ public class GameService {
     public void delAllUsers(){
         userDataBase.delAllUsers();
         gameCounter.setCount(0);
+    }
+    public void removeUser(String name, String nickName, Integer id){
+        List<User> users = getAllUsers();
+        for (int i = 0; i < users.size(); i++) {
+            if(users.get(i).getName().equals(name) && users.get(i).getNickName().equals(nickName) &&
+            users.get(i).getId().intValue() == id.intValue()){
+                getUserDataBase().getUserMap().remove(i);
+                setUserCounter(getUserCounter() - 1);
+            }
+        }
     }
     public Games createGame(GameTypes type, User user){
         Games game = constructor.getGame(type);

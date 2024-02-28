@@ -1,4 +1,5 @@
-<%--
+<%@ page import="models.User" %>
+<%@ page import="service.GameService" %><%--
   Created by IntelliJ IDEA.
   User: Roman
   Date: 25.02.2024
@@ -27,6 +28,16 @@
 </div>
 <div>
     <a href="index.jsp">Back to main</a>
+</div>
+<div>
+    <%User user = (User)session.getAttribute("user");%>
+    <%GameService service = (GameService) session.getAttribute("service");%>
+        <aside>
+        <h3>Statistics</h3>
+        <p>Ip adress: <%=request.getRemoteAddr()%></p>
+        <p>Nickname:<%=user.getNickName()%></p>
+        <p>Game counter:<%=user.getGameCount()%> </p>
+    </aside>
 </div>
 
 </body>
