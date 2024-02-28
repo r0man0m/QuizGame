@@ -21,8 +21,9 @@ public class RegistrationUserServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession(true);
         session.setAttribute("added", null);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/registerUser.jsp");
-        dispatcher.forward(req, resp);
+        //RequestDispatcher dispatcher = req.getRequestDispatcher("/registerUser.jsp");
+        resp.sendRedirect("registerUser.jsp");
+        //dispatcher.forward(req, resp);
     }
 
     @Override

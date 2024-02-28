@@ -8,30 +8,32 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+
     <title>register page</title>
 </head>
 <body>
+
     <header>
         <h1>Register page</h1>
     </header>
     <div>
         <h2>Add new user</h2>
-        <form action="/regUser" method="post">
+        <form action="regUser" method="post">
             <label for="name">Name: </label>
             <input type="text" name="name" id="name" required>
             <br>
             <label for="nick">Nickname</label>
             <input type="text" name="nick" id="nick" required>
             <br>
+
             <button type="submit">Submit</button>
         </form>
     </div>
-    <div>
         <%if(session.getAttribute("added")!=null){%>
-        <h2><%=session.getAttribute("added")%></h2>
-            <%}%>
-    </div>
-    <div>
+        <h3><%= session.getAttribute("added").toString()%></h3>
+        <button type="reset" onclick="window.location='regUser'">OK</button>
+        <%}%>
+    <div><br>
         <a href="/index.jsp">Back to main</a>
     </div>
 </body>

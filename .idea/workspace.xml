@@ -9,13 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4172d70-481f-4225-bcd0-a86819d1178c" name="Changes" comment="added delUser">
+    <list default="true" id="a4172d70-481f-4225-bcd0-a86819d1178c" name="Changes" comment="del registerGame.jsp, RegistrationGameServlet.java">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GameService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/TypeConstructor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/RegistrationGameServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/registerGame.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/RegistrationUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/RegistrationUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/registerUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registerUser.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,11 +24,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="Interface" />
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -203,7 +201,7 @@
       <workItem from="1708860965187" duration="4931000" />
       <workItem from="1708982222301" duration="2108000" />
       <workItem from="1709046995378" duration="20074000" />
-      <workItem from="1709146384392" duration="9156000" />
+      <workItem from="1709146384392" duration="14315000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -245,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709156255600</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="del registerGame.jsp, RegistrationGameServlet.java">
+      <option name="closed" value="true" />
+      <created>1709157146152</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709157146152</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +275,8 @@
     <MESSAGE value="added confirmation admin password" />
     <MESSAGE value="added UfoGame" />
     <MESSAGE value="added delUser" />
-    <option name="LAST_COMMIT_MESSAGE" value="added delUser" />
+    <MESSAGE value="del registerGame.jsp, RegistrationGameServlet.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="del registerGame.jsp, RegistrationGameServlet.java" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
