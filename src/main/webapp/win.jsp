@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link rel="stylesheet" href="styles/w3.css">
-<link rel="stylesheet" href="styles/mystyle.css">
+<link rel="stylesheet" href="styles/myStyle.css">
 <html>
 <head>
     <title>Winner page</title>
