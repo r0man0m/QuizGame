@@ -8,46 +8,53 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<link rel="stylesheet" href="styles/w3.css">
 <html>
 <head>
     <title>User List</title>
 
 </head>
-<body>
+<body class="w3-light-grey">
+<div class="w3-container w3-blue-grey w3-opacity-min w3-left-align">
     <header>
         <h1>Admin page</h1>
     </header>
-    <h2>User list</h2>
-    <div>
-        <%GameService service = GameService.getInstance();
-            List<User> users = service.getAllUsers();
-        %>
+</div>
+        <div class="w3-container w3-blue w3-opacity w3-left-align">
+            <h2>User list</h2>
+        </div>
+            <%GameService service = GameService.getInstance();
+                List<User> users = service.getAllUsers();
+            %>
+            <div class="w3-container w3-blue-grey w3-opacity w3-left-align">
+                <ul>
+                    <%for (User user: users){%>
+                    <li class="w3-animate-zoom">User id <%=user.getId()%></li>
+                    <li class="w3-animate-zoom">User name <%=user.getName()%></li>
+                    <li class="w3-animate-zoom">User nickname <%=user.getNickName()%></li>
+                    <br>
+                    <%}%>
+                </ul>
+            </div>
 
-        <ul>
-            <%for (User user: users){%>
-                <li>User id <%=user.getId()%></li>
-                <li>User name <%=user.getName()%></li>
-                <li>User nickname <%=user.getNickName()%></li>
-            <br>
-            <%}%>
-        </ul>
-
-    </div>
-    <div>
+    <div class="w3-container w3-blue-grey w3-opacity w3-left-align">
         <form action="del" method="post">
-            <button name="button" value="all" type="submit">Delete all users</button>
+            <button  class="w3-btn w3-opacity-min w3-animate-bottom w3-gray w3-round-large" name="button" value="all" type="submit">Delete all users</button>
         </form>
+    </div>
+    <div class="w3-container w3-grayscale w3-left-align">
         <form action="del" method="post">
             <label for="name">User Name</label>
-            <input type="text" name="name" id="name" required><br>
+            <input class="w3-input w3-animate-input w3-border w3-round-large" type="text" name="name" id="name" required><br>
             <label for="nickName">User nickname</label>
-            <input type="text" name="nickName" id="nickName" required><br>
+            <input class="w3-input w3-animate-input w3-border w3-round-large" type="text" name="nickName" id="nickName" required><br>
             <label for="id">User Id</label>
-            <input type="number" name="id" id="id" required><br>
-            <button name="button" value="one" type="submit">Delete user</button><br>
+            <input class="w3-input w3-animate-input w3-border w3-round-large" type="number" name="id" id="id" required><br>
+            <button class="w3-btn w3-animate-bottom w3-gray w3-round-large" name="button" value="one" type="submit">Delete user</button><br>
         </form>
     </div>
-    <div>
+
+    <div class="w3-container w3-grey w3-opacity-min w3-right-align w3-padding">
         <a href="index.jsp">Back to main</a>
     </div>
 </body>

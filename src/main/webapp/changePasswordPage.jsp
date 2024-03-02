@@ -6,20 +6,22 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<link rel="stylesheet" href="styles/w3.css">
 <html>
 <head>
     <title>Change password</title>
 </head>
-<body>
+<body class="w3-light-gray">
     <header>
-        <h1>Change password page</h1>
-
+        <div class="w3-container w3-blue-grey w3-opacity w3-right-align">
+            <h1>Change password page</h1>
+        </div>
     </header>
-            <div>
+            <div class="w3-selection w3-light-grey w3-padding">
                     <form action="change" method="post">
                         <label for="change">Change password</label>
-                        <input type="password" name="change" id="change" required pattern="^\d+$" size="5"><br>
-                        <button type="submit">Send new password</button>
+                        <input class="w3-hover-border-pale-green w3-round-large" type="password" name="change" id="change" required pattern="^\d+$" size="5"><br>
+                        <button class="w3-btn w3-blue-gray w3-round-large w3-margin-bottom" type="submit">Send new password</button>
                     </form>
                 </div>
 
