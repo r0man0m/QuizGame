@@ -6,8 +6,6 @@ import models.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import repositories.UserDataBase;
-
-import java.security.KeyStore;
 import java.util.*;
 
 public class GameService {
@@ -43,10 +41,6 @@ public class GameService {
         userDataBase.setUser(user, id);
         logger.info("User name " + user.getName() + " user nickname " + user.getNickName() + " user id " + id + " set ");
     }
-    public User getUser(Integer id){
-        logger.info("User name" + userDataBase.getUser(id).getName() + " User nickname " + userDataBase.getUser(id).getNickName() + " user id " + userDataBase.getUser(id).getId() + " get");
-        return userDataBase.getUser(id);
-    }
     public void setUserCounter(Integer counter){
         userCounter.setCountUser(counter);
         logger.info("Set user counter " + counter);
@@ -62,10 +56,6 @@ public class GameService {
     public Integer getGameCounter(){
         logger.info("Get game counter " + gameCounter.getCount());
         return gameCounter.getCount();
-    }
-    public Integer getUserId(String nickName){
-        logger.info("get user id " + userDataBase.getIdUser(nickName));
-        return userDataBase.getIdUser(nickName);
     }
     public List<User> getAllUsers(){
         logger.info("Get all users ");
