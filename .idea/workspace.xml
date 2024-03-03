@@ -9,15 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4172d70-481f-4225-bcd0-a86819d1178c" name="Changes" comment="added w3.css">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/aliens.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/ufoScreen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/upset.jpg" afterDir="false" />
+    <list default="true" id="a4172d70-481f-4225-bcd0-a86819d1178c" name="Changes" comment="added some images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/UserDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/UserDataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/GameConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GameConstructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/PasswordSaver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/PasswordSaver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/AdminLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/AdminLoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/AdminServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/AdminServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/AuthorizationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/AuthorizationServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/ChangeAdminPasswordServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/ChangeAdminPasswordServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/RegistrationUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/RegistrationUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/SetGameServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/SetGameServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminPage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/game.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/game.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/loose.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/loose.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles/mystyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles/mystyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,36 +66,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.Tomcat 9.0.84.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Roman/IdeaProjects/GameTestSession/src/main/webapp/styles&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;service.view.auto.scroll.to.source&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.QuizGame [deploy].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.Tomcat 9.0.84.executor": "Debug",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Roman/IdeaProjects/GameTestSession/src/main/webapp/styles",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "service.view.auto.scroll.to.source": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Roman\IdeaProjects\GameTestSession\src\main\webapp\styles" />
       <recent name="C:\Users\Roman\IdeaProjects\GameTestSession\src\main\webapp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Roman\IdeaProjects\GameTestSession\src\main\webapp\styles\images" />
       <recent name="C:\Users\Roman\IdeaProjects\GameTestSession\src\main\webapp\styles" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -216,7 +224,7 @@
       <workItem from="1709146384392" duration="17903000" />
       <workItem from="1709204012198" duration="6229000" />
       <workItem from="1709274134801" duration="18475000" />
-      <workItem from="1709384428218" duration="6777000" />
+      <workItem from="1709384428218" duration="33069000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -282,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709384662057</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added some images">
+      <option name="closed" value="true" />
+      <created>1709391993748</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709391993748</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +325,8 @@
     <MESSAGE value="del registerGame.jsp, RegistrationGameServlet.java" />
     <MESSAGE value="added registration message" />
     <MESSAGE value="added w3.css" />
-    <option name="LAST_COMMIT_MESSAGE" value="added w3.css" />
+    <MESSAGE value="added some images" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some images" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

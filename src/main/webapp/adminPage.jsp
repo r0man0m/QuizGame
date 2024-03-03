@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="styles/w3.css">
 <html>
 <head>
-    <title>User List</title>
+    <title>User`s List</title>
 
 </head>
 <body class="w3-light-grey">
@@ -21,7 +21,7 @@
     </header>
 </div>
         <div class="w3-container w3-blue w3-opacity w3-left-align">
-            <h2>User list</h2>
+            <h2>User`s list</h2>
         </div>
             <%GameService service = GameService.getInstance();
                 List<User> users = service.getAllUsers();
@@ -29,9 +29,10 @@
             <div class="w3-container w3-blue-grey w3-opacity w3-left-align">
                 <ul>
                     <%for (User user: users){%>
-                    <li class="w3-animate-zoom">User id <%=user.getId()%></li>
-                    <li class="w3-animate-zoom">User name <%=user.getName()%></li>
-                    <li class="w3-animate-zoom">User nickname <%=user.getNickName()%></li>
+                    <li class="w3-animate-zoom">User id: <%=user.getId()%></li>
+                    <li class="w3-animate-zoom">User name: <%=user.getName()%></li>
+                    <li class="w3-animate-zoom">User nickname: <%=user.getNickName()%></li>
+                    <li class="w3-animate-zoom">Total game: <%=user.getGameCount()%></li>
                     <br>
                     <%}%>
                 </ul>

@@ -8,8 +8,11 @@ import models.games.UfoGame;
 import models.content.AnotherContent;
 import models.content.MoreContent;
 import models.content.UfoContent;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class GameConstructor {
+    private static final Logger logger = LoggerFactory.getLogger(GameConstructor.class);
 
     public Games getGame(GameTypes type){
         Games game = null;
@@ -20,6 +23,7 @@ public class GameConstructor {
             break;
             case MORE:game =  new MoreGame(new MoreContent(), GameTypes.MORE);
         }
+        logger.info("Return game type of " + type);
         return game;
     }
 }

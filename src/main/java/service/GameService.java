@@ -1,9 +1,13 @@
 package service;
 
+import exceptions.NotUserExistsException;
 import interfaces.Games;
 import models.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import repositories.UserDataBase;
 
+import java.security.KeyStore;
 import java.util.*;
 
 public class GameService {
@@ -16,6 +20,7 @@ public class GameService {
     private GameIterator iterator = new GameIterator();
 
     private Map<Integer, Games>db = new HashMap<>();
+    private static final Logger logger = LoggerFactory.getLogger(GameService.class);
 
     private GameService() {
     }
@@ -28,54 +33,78 @@ public class GameService {
     }
     public void setGame(Games game, Integer id){
         db.put(id, game);
+        logger.info("Game " + game.getType() + " Game id " + game.getId() + " set ");
     }
     public Games getGame(Integer id){
+        logger.info("Get game id " + id + db.get(id));
         return db.get(id);
     }
     public void setUser(User user, Integer id){
         userDataBase.setUser(user, id);
+        logger.info("User name " + user.getName() + " user nickname " + user.getNickName() + " user id " + id + " set ");
     }
     public User getUser(Integer id){
+        logger.info("User name" + userDataBase.getUser(id).getName() + " User nickname " + userDataBase.getUser(id).getNickName() + " user id " + userDataBase.getUser(id).getId() + " get");
         return userDataBase.getUser(id);
     }
     public void setUserCounter(Integer counter){
         userCounter.setCountUser(counter);
+        logger.info("Set user counter " + counter);
     }
     public Integer getUserCounter(){
+        logger.info("Get user counter " + userCounter.getCountUser());
         return userCounter.getCountUser();
     }
     public void setGameCounter(Integer counter){
         gameCounter.setCount(counter);
+        logger.info("Set game counter " + counter);
     }
     public Integer getGameCounter(){
+        logger.info("Get game counter " + gameCounter.getCount());
         return gameCounter.getCount();
     }
     public Integer getUserId(String nickName){
+        logger.info("get user id " + userDataBase.getIdUser(nickName));
         return userDataBase.getIdUser(nickName);
     }
     public List<User> getAllUsers(){
+        logger.info("Get all users ");
         return userDataBase.getAll();
     }
     public UserDataBase getUserDataBase(){
+        logger.info("Get User data base");
         return userDataBase;
     }
 
     public boolean checkUser(User user){
         checkUsersService = new CheckUsersService(getAllUsers());
+        logger.info("User is exists " + checkUsersService.check(user));
         return checkUsersService.check(user);
     }
     public void delAllUsers(){
         userDataBase.delAllUsers();
-        gameCounter.setCount(0);
+        logger.info("All users deleted");
+        userCounter.setCountUser(0);
+        logger.info("Total users " + userCounter.getCountUser());
     }
-    public void removeUser(String name, String nickName, Integer id){
-        List<User> users = getAllUsers();
-        for (int i = 0; i < users.size(); i++) {
-            if(users.get(i).getName().equals(name) && users.get(i).getNickName().equals(nickName) &&
-            users.get(i).getId().intValue() == id.intValue()){
-                getUserDataBase().getUserMap().remove(i);
-                setUserCounter(getUserCounter() - 1);
+    public void removeUser(String name, String nickName, Integer id) {
+        User user = null;
+        for (Map.Entry<Integer, User> e : getUserDataBase().getUserMap().entrySet()) {
+            if (e.getValue().getName().equals(name) && e.getValue().getNickName().equals(nickName)
+                    && e.getValue().getId().equals(id)) {
+                user = getUserDataBase().getUserMap().get(id);
+                if (getUserCounter() != 0) {
+                    setUserCounter(getUserCounter() - 1);
+                }
+                break;
             }
+        }
+        if(checkUser(user)) {
+            getUserDataBase().getUserMap().remove(user.getId());
+            logger.info("User " + user.getId() + " deleted ");
+        }else {
+            logger.error("User is not exists!");
+            throw new NotUserExistsException("User is not exists!");
         }
     }
     public Games createGame(GameTypes type, User user){
@@ -83,10 +112,12 @@ public class GameService {
         game.setId(getGameCounter());
         game.setType(type);
         game.setUser(user);
+        logger.info("Game " + game.getType() + " game id " + game.getId() + " created");
         return game;
     }
 
     public GameIterator getIterator() {
+        logger.info("Iterator returned");
         return iterator;
     }
 }

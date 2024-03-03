@@ -18,6 +18,11 @@ public class SetGameServlet extends HttpServlet {
     private GameService service = GameService.getInstance();
 
     @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+       req.getRequestDispatcher("choiceGame.jsp").forward(req,resp);
+    }
+
+    @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Games game = null;
         HttpSession session = req.getSession(true);
@@ -41,7 +46,6 @@ public class SetGameServlet extends HttpServlet {
             }
         }
         user.setGameCount(user.getGameCount() + 1);
-       // req.getRequestDispatcher("game.jsp").forward(req,resp);
         resp.sendRedirect("game");
     }
     public void createNewGame(Games game, HttpSession session){

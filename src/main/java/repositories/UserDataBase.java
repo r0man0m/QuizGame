@@ -44,5 +44,12 @@ public class UserDataBase {
     public void delAllUsers(){
         userMap.clear();
     }
+    public List<User> getUsersList(){
+        List<User> userslist = new ArrayList<>();
+        for (Map.Entry<Integer, User>U: userMap.entrySet()){
+            userslist.add(U.getValue());
+        }
+        return userslist;
+    }
 
 }

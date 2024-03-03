@@ -32,14 +32,18 @@
 <div class="w3-container w3-grey w3-opacity-min w3-right-align w3-padding">
     <a href="index.jsp">Back to main</a>
 </div>
+<div class="w3-container w3-blue-gray w3-opacity-min w3-right-align w3-padding">
+    <a href="/setGame">Choice another game</a>
+</div>
 <div class="w3-container w3-light-gray w3-opacity w3-left-align-align w3-padding">
     <%User user = (User)session.getAttribute("user");%>
-    <%GameService service = (GameService) session.getAttribute("service");%>
+<%--    <%GameService service = (GameService) session.getAttribute("service");%>--%>
         <aside>
         <h3>Statistics</h3>
         <p>Ip adress: <%=request.getRemoteAddr()%></p>
         <p>Nickname:<%=user.getNickName()%></p>
         <p>Game counter:<%=user.getGameCount()%> </p>
+
     </aside>
 </div>
 

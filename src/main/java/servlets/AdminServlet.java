@@ -1,6 +1,8 @@
 package servlets;
 
 import exceptions.WrongPasswordException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import service.GameService;
 import service.PasswordSaver;
 
@@ -14,6 +16,7 @@ import java.io.IOException;
 
 @WebServlet("/admin")
 public class AdminServlet extends HttpServlet {
+    private static final Logger logger = LoggerFactory.getLogger(AdminLoginServlet.class);
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.sendRedirect("ConfirmationPage.jsp");
@@ -27,6 +30,7 @@ public class AdminServlet extends HttpServlet {
         if(pass == passwordSaver.getPassword()){
             dispatcher.forward(req,resp);
         }else {
+            logger.error("Wrong password in AdminServlet!");
             throw new WrongPasswordException("Wrong password!");
         }
     }
