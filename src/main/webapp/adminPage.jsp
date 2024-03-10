@@ -21,7 +21,7 @@
     </header>
 </div>
         <div class="w3-container w3-blue w3-opacity w3-left-align">
-            <h2>User`s list</h2>
+            <h2>Users list</h2>
         </div>
             <%GameService service = GameService.getInstance();
                 List<User> users = service.getAllUsers();

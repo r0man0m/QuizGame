@@ -21,10 +21,16 @@ public class AuthorizationServlet extends HttpServlet {
         HttpSession session = req.getSession(true);
         String name = req.getParameter("name");
         String nick = req.getParameter("nickName");
-        User user = new User(name, nick);
+        User user = null;
+        for (User U: service.getAllUsers()){
+            if(U.getName().equals(name) && U.getNickName().equals(nick)){
+                user = U;
+                break;
+            }
+        }
         session.setAttribute("user", user);
         if(!service.checkUser(user)){
-            logger.error("User is not exists during Authorization!");
+            logger.error("User is not exists!");
             throw new NotUserExistsException("User is not exists");
         }else {
             req.getRequestDispatcher("choiceGame.jsp").forward(req, resp);

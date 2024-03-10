@@ -117,7 +117,7 @@ public class GameService {
     }
 
     public GameIterator getIterator() {
-        logger.info("Iterator returned");
+        logger.info("Game iterator " + iterator.getCount());
         return iterator;
     }
 }

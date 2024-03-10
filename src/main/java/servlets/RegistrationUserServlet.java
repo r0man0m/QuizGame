@@ -23,7 +23,7 @@ public class RegistrationUserServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession(true);
-        session.setAttribute("added", null);
+        //session.setAttribute("added", null);
         resp.sendRedirect("registerUser.jsp");
 
     }
@@ -36,8 +36,8 @@ public class RegistrationUserServlet extends HttpServlet {
         if(!gameService.checkUser(user)){
             gameService.setUser(user, userId);
             gameService.setUserCounter(userId + 1);
-            String added = null;
-            session.setAttribute("added", "User added!");
+           // String added = null;
+            //session.setAttribute("added", "User added!");
         }else {
             logger.error("Such a user exists!");
             throw new NotUserExistsException("Such a user exists!");
