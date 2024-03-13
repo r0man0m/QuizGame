@@ -23,7 +23,6 @@ public class GameServlet extends HttpServlet {
         session.setAttribute("question", game.getContent().getQuestion(0));
         session.setAttribute("answer1", game.getContent().getAnswer(0).get(0));
         session.setAttribute("answer2", game.getContent().getAnswer(0).get(1));
-        session.setAttribute("service", service);
         req.getRequestDispatcher("game.jsp").forward(req,resp);
         service.getIterator().setCount(1);
     }

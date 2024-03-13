@@ -100,7 +100,6 @@ public class GameService {
     public Games createGame(GameTypes type, User user){
         Games game = constructor.getGame(type);
         game.setId(getGameCounter());
-        game.setType(type);
         game.setUser(user);
         logger.info("Game " + game.getType() + " game id " + game.getId() + " created");
         return game;

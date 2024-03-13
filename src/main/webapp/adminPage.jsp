@@ -1,13 +1,12 @@
 <%@ page import="service.GameService" %>
-<%@ page import="java.util.List" %>
-<%@ page import="models.User" %><%--
-  Created by IntelliJ IDEA.
-  User: Roman
-  Date: 20.02.2024
-  Time: 0:37
-  To change this template use File | Settings | File Templates.
---%>
+<%--  Created by IntelliJ IDEA.--%>
+<%--  User: Roman--%>
+<%--  Date: 20.02.2024--%>
+<%--  Time: 0:37--%>
+<%--  To change this template use File | Settings | File Templates.--%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <link rel="stylesheet" href="styles/w3.css">
 <html>
 <head>
@@ -23,18 +22,18 @@
         <div class="w3-container w3-blue w3-opacity w3-left-align">
             <h2>Users list</h2>
         </div>
-            <%GameService service = GameService.getInstance();
-                List<User> users = service.getAllUsers();
-            %>
+                <c:set var = "service" scope = "session" value = "${GameService.getInstance()}"/>
+                <c:set var = "users" scope="session" value="${service.getAllUsers()}" />
             <div class="w3-container w3-blue-grey w3-opacity w3-left-align">
                 <ul>
-                    <%for (User user: users){%>
-                    <li class="w3-animate-zoom">User id: <%=user.getId()%></li>
-                    <li class="w3-animate-zoom">User name: <%=user.getName()%></li>
-                    <li class="w3-animate-zoom">User nickname: <%=user.getNickName()%></li>
-                    <li class="w3-animate-zoom">Total game: <%=user.getGameCount()%></li>
-                    <br>
-                    <%}%>
+                    <c:forEach var="user" items="${users}">
+                        <li class="w3-animate-zoom">User id: <c:out value="${user.getId()}"/></li>
+                        <li class="w3-animate-zoom">User name: <c:out value="${user.getName()}"/></li>
+                        <li class="w3-animate-zoom">User nickname: <c:out value="${user.getNickName()}"/></li>
+                        <li class="w3-animate-zoom">Total game: <c:out value="${user.getGameCount()}"/></li>
+                        <br>
+                    </c:forEach>
+
                 </ul>
             </div>
 

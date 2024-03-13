@@ -17,11 +17,14 @@ public class GameConstructor {
     public Games getGame(GameTypes type){
         Games game = null;
         switch (type){
-            case UFO:game =  new UfoGame(new UfoContent(), GameTypes.UFO);
+            case UFO:
+                game = new UfoGame(new UfoContent(), GameTypes.UFO);
             break;
-            case ANOTHER:game =  new AnotherGame(new AnotherContent(), GameTypes.ANOTHER);
+            case ANOTHER:
+                game = new AnotherGame(new AnotherContent(), GameTypes.ANOTHER);
             break;
-            case MORE:game =  new MoreGame(new MoreContent(), GameTypes.MORE);
+            case MORE:
+                game = new MoreGame(new MoreContent(), GameTypes.MORE);
         }
         logger.info("Return game type of " + type);
         return game;

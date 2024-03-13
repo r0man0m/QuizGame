@@ -31,22 +31,28 @@ public class SetGameServlet extends HttpServlet {
             case "ufo":{
                 service.setGame(service.createGame(GameTypes.UFO, user), service.getGameCounter());
                 createNewGame(game, session);
+                user.setGameCount(user.getGameCount() + 1);
+                resp.sendRedirect("game");
                 break;
             }
             case "another":{
                 service.setGame(service.createGame(GameTypes.ANOTHER, user), service.getGameCounter());
                 createNewGame(game, session);
+                user.setGameCount(user.getGameCount() + 1);
+                resp.sendRedirect("game");
                 break;
             }
             case "more":{
                 service.setGame(service.createGame(GameTypes.MORE, user), service.getGameCounter());
                 createNewGame(game, session);
+                user.setGameCount(user.getGameCount() + 1);
+                resp.sendRedirect("game");
                 break;
 
             }
         }
-        user.setGameCount(user.getGameCount() + 1);
-        resp.sendRedirect("game");
+//        user.setGameCount(user.getGameCount() + 1);
+//        resp.sendRedirect("game");
     }
     public void createNewGame(Games game, HttpSession session){
         game = service.getGame(service.getGameCounter());

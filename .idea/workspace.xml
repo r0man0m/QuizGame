@@ -9,10 +9,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4172d70-481f-4225-bcd0-a86819d1178c" name="Changes" comment="fix Set User id and total gameCounter">
-      <change afterPath="$PROJECT_DIR$/src/test/java/GameServiceTest.java" afterDir="false" />
+    <list default="true" id="a4172d70-481f-4225-bcd0-a86819d1178c" name="Changes" comment="add GameServiceTest.java">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/notContent.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UfoGameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/content/AnotherContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/content/AnotherContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/content/MoreContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/content/MoreContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/content/UfoContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/content/UfoContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/games/AnotherGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/games/AnotherGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/games/MoreGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/games/MoreGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/games/UfoGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/games/UfoGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/games/abstracts/AbstractGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/games/abstracts/AbstractGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/GameConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GameConstructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/GameServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/GameServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/SetGameServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/SetGameServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/game.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/game.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles/myStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles/myStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GameServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,16 +40,19 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2-sources.jar!/org/junit/jupiter/api/Assertions.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -59,17 +78,29 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "JUnit.GameConstructorTest.createGameTest.executor": "Run",
     "JUnit.GameServiceTest.checkExistsUserTest.executor": "Run",
     "JUnit.GameServiceTest.checkNoExistsUserTest.executor": "Run",
     "JUnit.GameServiceTest.checkNotExistsUserTest.executor": "Run",
     "JUnit.GameServiceTest.checkUserTest.executor": "Run",
+    "JUnit.GameServiceTest.createGameTest.executor": "Run",
     "JUnit.GameServiceTest.dellAllUserTest.executor": "Run",
     "JUnit.GameServiceTest.dellAllUsersTest.executor": "Run",
     "JUnit.GameServiceTest.dellUserTest.executor": "Run",
     "JUnit.GameServiceTest.removeUserTest.executor": "Run",
+    "JUnit.UfoGameTest.UfoGameTest (1).executor": "Run",
+    "JUnit.UfoGameTest.UfoGameTest (2).executor": "Run",
+    "JUnit.UfoGameTest.UfoGameTest.executor": "Debug",
+    "JUnit.UfoGameTest.looseGameTest.executor": "Run",
+    "JUnit.UfoGameTest.looseUfoGameTest.executor": "Run",
+    "JUnit.UfoGameTest.ufoGameTest.executor": "Run",
+    "JUnit.UfoGameTest.ufoMainGameTest.executor": "Run",
+    "JUnit.UfoGameTest.winUfoGameTest.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.QuizGame [-U,-X...].executor": "Run",
+    "Maven.QuizGame [clean].executor": "Run",
     "Maven.QuizGame [deploy].executor": "Run",
+    "Maven.QuizGame [install].executor": "Run",
     "Maven.QuizGame [mvn,-U,-X...].executor": "Run",
     "Maven.QuizGame [test].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -78,7 +109,7 @@
     "Tomcat Server.Tomcat 9.0.84.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Roman/IdeaProjects/GameTestSession/src/main/webapp/styles",
+    "last_opened_file_path": "C:/Users/Roman/IdeaProjects/GameTestSession/src/main/webapp/styles/images",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -89,12 +120,13 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "service.view.auto.scroll.to.source": "true",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Roman\IdeaProjects\GameTestSession\src\main\webapp\styles\images" />
       <recent name="C:\Users\Roman\IdeaProjects\GameTestSession\src\main\webapp\styles" />
       <recent name="C:\Users\Roman\IdeaProjects\GameTestSession\src\main\webapp" />
     </key>
@@ -112,59 +144,59 @@
       <command value="mvn -U -X dependency:copy-dependencies" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GameServiceTest.removeUserTest">
-    <configuration name="GameServiceTest.checkExistsUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.84">
+    <configuration name="GameServiceTest.createGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QuizGame" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GameServiceTest" />
-      <option name="METHOD_NAME" value="checkExistsUserTest" />
+      <option name="METHOD_NAME" value="createGameTest(models.GameTypes)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameServiceTest.checkNotExistsUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UfoGameTest.looseUfoGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QuizGame" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameServiceTest" />
-      <option name="METHOD_NAME" value="checkNotExistsUserTest" />
+      <option name="MAIN_CLASS_NAME" value="UfoGameTest" />
+      <option name="METHOD_NAME" value="looseUfoGameTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameServiceTest.dellAllUsersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UfoGameTest.ufoGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QuizGame" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameServiceTest" />
-      <option name="METHOD_NAME" value="dellAllUsersTest" />
+      <option name="MAIN_CLASS_NAME" value="UfoGameTest" />
+      <option name="METHOD_NAME" value="ufoGameTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameServiceTest.dellUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UfoGameTest.ufoMainGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QuizGame" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameServiceTest" />
-      <option name="METHOD_NAME" value="dellUserTest" />
+      <option name="MAIN_CLASS_NAME" value="UfoGameTest" />
+      <option name="METHOD_NAME" value="ufoMainGameTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameServiceTest.removeUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UfoGameTest.winUfoGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QuizGame" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameServiceTest" />
-      <option name="METHOD_NAME" value="removeUserTest" />
+      <option name="MAIN_CLASS_NAME" value="UfoGameTest" />
+      <option name="METHOD_NAME" value="winUfoGameTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.84" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.84" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="BROWSER_ID" value="37cae5b9-e8b2-4949-9172-aafa37fbc09c" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="QuizGame:war exploded">
@@ -252,13 +284,21 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.GameServiceTest.createGameTest" />
+      <item itemvalue="JUnit.UfoGameTest.looseUfoGameTest" />
+      <item itemvalue="JUnit.UfoGameTest.ufoGameTest" />
+      <item itemvalue="JUnit.UfoGameTest.ufoMainGameTest" />
+      <item itemvalue="JUnit.UfoGameTest.winUfoGameTest" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.84" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GameServiceTest.removeUserTest" />
-        <item itemvalue="JUnit.GameServiceTest.checkExistsUserTest" />
-        <item itemvalue="JUnit.GameServiceTest.dellUserTest" />
-        <item itemvalue="JUnit.GameServiceTest.dellAllUsersTest" />
-        <item itemvalue="JUnit.GameServiceTest.checkNotExistsUserTest" />
+        <item itemvalue="JUnit.UfoGameTest.looseUfoGameTest" />
+        <item itemvalue="JUnit.UfoGameTest.winUfoGameTest" />
+        <item itemvalue="JUnit.UfoGameTest.ufoMainGameTest" />
+        <item itemvalue="JUnit.GameServiceTest.createGameTest" />
+        <item itemvalue="JUnit.UfoGameTest.ufoGameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -292,7 +332,15 @@
       <workItem from="1709204012198" duration="6229000" />
       <workItem from="1709274134801" duration="18475000" />
       <workItem from="1709384428218" duration="33069000" />
-      <workItem from="1710064487452" duration="21861000" />
+      <workItem from="1710064487452" duration="22009000" />
+      <workItem from="1710175147866" duration="12505000" />
+      <workItem from="1710255427158" duration="5213000" />
+      <workItem from="1710266473898" duration="10631000" />
+      <workItem from="1710339868630" duration="238000" />
+      <workItem from="1710340269217" duration="165000" />
+      <workItem from="1710340744122" duration="68000" />
+      <workItem from="1710340823932" duration="7995000" />
+      <workItem from="1710352295652" duration="12169000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -374,7 +422,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710066564378</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add GameServiceTest.java">
+      <option name="closed" value="true" />
+      <created>1710104583793</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1710104583793</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,7 +459,8 @@
     <MESSAGE value="added w3.css" />
     <MESSAGE value="added some images" />
     <MESSAGE value="fix Set User id and total gameCounter" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix Set User id and total gameCounter" />
+    <MESSAGE value="add GameServiceTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="add GameServiceTest.java" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
@@ -411,5 +468,9 @@
         <PinnedItemInfo parentTag="repositories.UserDataBase" memberName="userMap" />
       </pinned-members>
     </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

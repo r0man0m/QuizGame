@@ -13,5 +13,10 @@
 .smile{
     background-image: url("images/upset.jpg");
     background-size: contain;
-
+}
+.sadSmile{
+    background-image: url("images/upset.jpg");
+    background-size: 100px;
+    background-repeat: repeat;
+    background-position: center;
 }

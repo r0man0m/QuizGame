@@ -20,6 +20,7 @@ public abstract class AbstractGame implements Games {
 
     public AbstractGame(Content content, GameTypes type) {
         this.content = content;
+        this.type = type;
     }
     @Override
     public boolean equals(Object o) {
