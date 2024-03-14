@@ -1,4 +1,4 @@
-<%@ page import="java.io.PrintWriter" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: Roman
   Date: 17.02.2024
@@ -15,7 +15,7 @@
 
     <header>
         <div class="w3-container w3-blue-grey w3-opacity-min w3-left-align">
-            <h1>Register page</h1>
+            <h1>Registration page</h1>
         </div>
 
     </header>
@@ -33,14 +33,6 @@
               <button class="w3-btn w3-green w3-round-large w3-margin-bottom" type="submit">Add</button>
           </form>
       </div>
-<%--    <div class="w3-card-4">--%>
-<%--        <%if(session.getAttribute("added")!=null){%>--%>
-<%--        <h3 class="l1"><%= session.getAttribute("added").toString()%></h3>--%>
-<%--        <button class="w3-btn w3-green w3-round-large w3-margin-bottom" type="reset" onclick="window.location='regUser'">OK</button>--%>
-<%--        <%}%>--%>
-<%--    </div>--%>
-
-
     <div class="w3-container w3-grey w3-opacity w3-left-align w3-padding"><br>
         <a href="/index.jsp">Back to main</a>
     </div>

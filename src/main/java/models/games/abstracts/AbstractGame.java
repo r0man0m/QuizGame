@@ -7,7 +7,6 @@ import lombok.Getter;
 import lombok.Setter;
 import models.GameTypes;
 import models.User;
-
 import java.util.Objects;
 @Data
 public abstract class AbstractGame implements Games {

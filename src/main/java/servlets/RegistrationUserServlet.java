@@ -5,8 +5,6 @@ import models.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import service.GameService;
-
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -23,7 +21,6 @@ public class RegistrationUserServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession(true);
-        //session.setAttribute("added", null);
         resp.sendRedirect("registerUser.jsp");
 
     }
@@ -36,8 +33,6 @@ public class RegistrationUserServlet extends HttpServlet {
         if(!gameService.checkUser(user)){
             gameService.setUser(user, userId);
             gameService.setUserCounter(userId + 1);
-           // String added = null;
-            //session.setAttribute("added", "User added!");
         }else {
             logger.error("Such a user exists!");
             throw new NotUserExistsException("Such a user exists!");

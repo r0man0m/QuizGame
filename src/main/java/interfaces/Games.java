@@ -2,7 +2,6 @@ package interfaces;
 
 import models.GameTypes;
 import models.User;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

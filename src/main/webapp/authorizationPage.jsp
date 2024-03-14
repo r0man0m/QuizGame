@@ -19,8 +19,6 @@
     </header>
     <div class="w3-selection w3-light-grey w3-padding">
         <form class="w3-selection w3-light-grey w3-padding" action="auth" method="post">
-            <label for="name">User Name</label>
-            <input class="w3-input w3-animate-input w3-border w3-round-large" type="text" name="name" id="name" required><br>
             <label for="NickName">User nickname</label>
             <input  class="w3-input w3-animate-input w3-border w3-round-large" type="text" name="nickName" id="nickName" required><br>
            <button class="w3-btn w3-green w3-round-large w3-margin-bottom" type="submit">Submit</button><br>

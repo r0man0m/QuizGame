@@ -4,7 +4,6 @@ import exceptions.WrongPasswordException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import service.PasswordSaver;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

@@ -19,11 +19,10 @@ public class AuthorizationServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession(true);
-        String name = req.getParameter("name");
         String nick = req.getParameter("nickName");
         User user = null;
         for (User U: service.getAllUsers()){
-            if(U.getName().equals(name) && U.getNickName().equals(nick)){
+            if(U.getNickName().equals(nick)){
                 user = U;
                 break;
             }

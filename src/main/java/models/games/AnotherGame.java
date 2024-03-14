@@ -3,7 +3,6 @@ package models.games;
 import models.GameTypes;
 import models.content.AnotherContent;
 import models.games.abstracts.AbstractGame;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

@@ -1,5 +1,6 @@
 <%@ page import="models.User" %>
-<%@ page import="service.GameService" %><%--
+<%@ page import="interfaces.Games" %>
+<%@ page import="models.GameTypes" %><%--
   Created by IntelliJ IDEA.
   User: Roman
   Date: 25.02.2024
@@ -14,7 +15,24 @@
     <title>Game Page</title>
 </head>
 <body class="w3-light-grey">
-<div class="game">
+<%String image = null;%>
+<% Games game = (Games) session.getAttribute("game");%>
+<% GameTypes type = game.getType();%>
+<% switch (type) {
+    case UFO: {
+        image = "game";
+        break;
+    }
+    case ANOTHER: {
+        image = "w3-blue-grey";
+        break;
+    }
+    case MORE: {
+        image = "w3-blue";
+        break;
+    }
+}%>
+<div class=<%=image%>>
     <div class="w3-container w3-blue-grey w3-opacity-min w3-center w3-animate-zoom">
         <h2><%=session.getAttribute("question")%></h2>
             <form class=" w3-container w3-light-grey w3-padding w3-centered" action="game" method="post">
@@ -36,7 +54,6 @@
 </div>
 <div class="w3-container w3-light-gray w3-opacity w3-left-align-align w3-padding">
     <%User user = (User)session.getAttribute("user");%>
-<%--    <%GameService service = (GameService) session.getAttribute("service");%>--%>
         <aside>
         <h3>Statistics</h3>
         <p>Ip adress: <%=request.getRemoteAddr()%></p>

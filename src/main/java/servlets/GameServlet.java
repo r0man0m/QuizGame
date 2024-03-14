@@ -1,9 +1,7 @@
 package servlets;
 
 import interfaces.Games;
-import models.User;
 import service.GameService;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

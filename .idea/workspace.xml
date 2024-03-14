@@ -9,26 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4172d70-481f-4225-bcd0-a86819d1178c" name="Changes" comment="add GameServiceTest.java">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/notContent.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UfoGameTest.java" afterDir="false" />
+    <list default="true" id="a4172d70-481f-4225-bcd0-a86819d1178c" name="Changes" comment="add UfoGameTest.java, notContent.jsp, fix AnotherGame.java and MoreGame.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/content/AnotherContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/content/AnotherContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/content/MoreContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/content/MoreContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/content/UfoContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/content/UfoContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/games/AnotherGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/games/AnotherGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/games/MoreGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/games/MoreGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/games/UfoGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/games/UfoGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/games/abstracts/AbstractGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/games/abstracts/AbstractGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/GameConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GameConstructor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GameService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/GameServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/GameServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/SetGameServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/SetGameServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/AuthorizationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlets/AuthorizationServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/authorizationPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/authorizationPage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/game.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/game.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/notContent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/notContent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/registerUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registerUser.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/styles/myStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles/myStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GameServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +184,6 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.84" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.84" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="QuizGame:war exploded">
@@ -340,7 +327,8 @@
       <workItem from="1710340269217" duration="165000" />
       <workItem from="1710340744122" duration="68000" />
       <workItem from="1710340823932" duration="7995000" />
-      <workItem from="1710352295652" duration="12169000" />
+      <workItem from="1710352295652" duration="12609000" />
+      <workItem from="1710434389595" duration="3846000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -430,7 +418,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710104583793</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add UfoGameTest.java, notContent.jsp, fix AnotherGame.java and MoreGame.java">
+      <option name="closed" value="true" />
+      <created>1710365678546</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1710365678546</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +456,8 @@
     <MESSAGE value="added some images" />
     <MESSAGE value="fix Set User id and total gameCounter" />
     <MESSAGE value="add GameServiceTest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="add GameServiceTest.java" />
+    <MESSAGE value="add UfoGameTest.java, notContent.jsp, fix AnotherGame.java and MoreGame.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="add UfoGameTest.java, notContent.jsp, fix AnotherGame.java and MoreGame.java" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

@@ -1,7 +1,6 @@
 package models.content;
 
 import models.games.abstracts.AbstractContent;
-
 import java.util.ArrayList;
 import java.util.List;
 

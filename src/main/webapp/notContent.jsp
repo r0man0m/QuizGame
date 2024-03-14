@@ -12,7 +12,7 @@
 <head>
     <title>No content</title>
 </head>
-<body class="sadSmile">
+<body class="black_smile">
     <div class="w3-red w3-padding-64 w3-opacity-min w3-center w3-animate-zoom">
         <h1>No content</h1>
         <a href="choiceGame.jsp">Back</a>
